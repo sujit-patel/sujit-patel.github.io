@@ -1,0 +1,738 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter&family=Lobster&family=Ubuntu&display=swap");
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("font/Gilroy-Regular.woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("font/Gilroy-Bold.woff2");
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("font/Gilroy-Medium.woff2");
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+    font-family: Gilroy;
+}
+
+/* Hover in All */
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+/* bulr div  */
+.ybulr {
+    position: fixed;
+    background-color: rgb(0, 183, 255);
+    top: -1%;
+    left: -1%;
+    width: 130px;
+    height: 100px;
+    filter: blur(80px);
+    border-radius: 50%;
+}
+
+.bbulr {
+    position: fixed;
+    background-color: red;
+    bottom: 1%;
+    right: 1%;
+    width: 130px;
+    height: 80px;
+    border-radius: 50%;
+    filter: blur(90px);
+}
+
+/* end burl div  */
+
+/* hide menu option show  */
+.aside {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    left: -100%;
+    background-color: white;
+    position: fixed;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: cubic-bezier();
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.aside nav .close {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 20px;
+    padding: 2rem;
+    /* background-color: aqua; */
+}
+
+.aside nav .close button {
+    border: none;
+    background-color: #40bbe0;
+    color: white;
+    padding: 5px 10px;
+    font-family: Gilroy-Bold;
+    font-style: 1rem;
+    border-radius: 6px;
+}
+
+.aside nav .menu {
+    padding: 20px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.aside nav .menu .list {
+    width: 100%;
+}
+
+
+.aside nav .menu .list .aside-ul {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+}
+
+.aside nav .menu .list .aside-ul li {
+    padding: 10px 0;
+}
+
+.aside nav .menu .list .aside-ul li a {
+    color: black;
+    opacity: 1;
+}
+
+
+/* Nav-bar */
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5vw 5vw;
+    /* background-color: aqua; */
+}
+
+/* Nav in logo text */
+nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+    font-family: Gilroy-Bold;
+    color: red;
+}
+
+nav .logo h1 span {
+    color: rgb(0, 183, 255);
+}
+
+/* logo end  */
+
+nav .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+nav .menu ul li {
+    list-style: none;
+}
+
+nav .menu ul li a {
+    color: rgba(0, 0, 0, 0.584);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Gilroy-Bold;
+    font-size: 14px;
+    opacity: 0.4;
+    font-size: 14px;
+    transition: all 0.2s ease-out;
+}
+
+nav .menu .list ul li a:hover {
+    color: black;
+    opacity: 0.6;
+    transition: all 0.2s ease-out;
+}
+
+/* frist child color change */
+.menu .list ul li:nth-child(1) a {
+    color: rgb(0, 183, 255);
+    opacity: 0.8;
+}
+
+.menu .list ul li:nth-child(1) a:hover {
+    color: rgb(0, 183, 255);
+    opacity: 1;
+}
+
+/* resume & github block */
+.resume,
+.github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume a img,
+.github a img {
+    height: 25px;
+    display: flex;
+    padding-right: 5px;
+}
+
+.menu .list ul .github a {
+    opacity: 1;
+    color: black;
+}
+
+.menu .list ul .github a:hover {
+    opacity: 1;
+}
+
+/* resume & github block  end*/
+
+/* small screen menu */
+nav .hidemenu {
+    display: none;
+}
+
+/* page1 start */
+#page1 {
+    /* width: 100%; */
+    /* height: fit-content; */
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+/* page1 hero  */
+.page1-hero {
+    display: flex;
+    justify-content: center;
+    padding: 2.5vw 0;
+    /* background-color: yellow; */
+}
+
+#page1 .block {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    font-family: Gilroy-Bold;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 2px 150px 5px rgba(102, 51, 153, 0.861);
+    background-color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.block #code {
+    padding: 10px 20px 0 0;
+    font-size: 20px;
+    color: red;
+}
+
+.block #design {
+    color: rgb(0, 183, 255);
+    padding: 10px 40px;
+    border-radius: 8px;
+    box-shadow: 5px 1px 20px #00c3ff81;
+    background-color: white;
+}
+
+.page1-hero #code::before {
+    content: "</> ";
+}
+
+/* page1 hero end */
+
+/* hero-buttom start  */
+.hero-buttom {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 0;
+    /* background-color: aqua; */
+}
+
+/* hero-buttom end  */
+.hero-buttom .limg {
+    width: 35%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+
+.limg img {
+    width: 70%;
+    height: 100%;
+    scale: 1.2;
+    object-fit: cover;
+    /* background-color: yellow; */
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about img {
+    width: 30%;
+}
+
+.about .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#page1 .rtext {
+    width: 65%;
+    height: 60%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.about .text h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: Gilroy-Medium;
+}
+
+#page1 .rtext p {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Gilroy-medium;
+}
+
+#page1 .rtext h2 span:nth-child(1),
+.rtext h2 span:nth-child(2) {
+    color: rgb(0, 183, 255);
+}
+
+#page1 .rtext h2 span:nth-child(3) {
+    color: red;
+}
+
+#page1 .rtext p::selection,
+.rtext p span::selection {
+    background-color: rgb(80, 149, 210);
+    color: white;
+}
+
+/* button div  */
+.introBtn {
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.introBtn img:hover {
+    cursor: pointer;
+}
+
+/* button apply time  */
+.introBtn button {
+    font-size: 20px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(0, 183, 255);
+}
+
+.introBtn button:first-child {
+    background-color: red;
+    font-weight: 100;
+}
+
+.introBtn:nth-child(2) button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.introBtn button img {
+    width: 15px;
+
+}
+
+/* hero-part section  */
+.hero-part {
+    height: fit-content;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rebeccapurple; */
+}
+
+.hero-part img {
+    width: 90%;
+    background: #40bbe0;
+
+}
+
+/* worksample start */
+#worksamples {
+    width: 85%;
+    min-height: fit-content;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+
+.work-container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.left-content {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 20px;
+    /* background-color: aqua; */
+}
+
+.right-content button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.right-content button img {
+    width: 150px;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    /* animation:  all linear 2s ease-in-out; */
+
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.box video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0 5px;
+    background: black;
+}
+
+
+/* worksample end */
+
+/* skill section start  */
+#skill {
+    width: 85%;
+    min-height: fit-content;
+    padding: 50px 0;
+    margin: auto;
+    /* background-color: red; */
+}
+
+.sub-2 {
+    padding-bottom: 0px;
+    font-size: 2rem;
+}
+
+.designing-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: fit-content;
+    padding: 40px 30px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0 0 0 3px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.designing-container img {
+    height: 50px;
+    border-radius: 5px;
+}
+
+/* skill section end  */
+
+/* contact section Start */
+#contact {
+    width: 85%;
+    padding: 20px 0;
+    margin: auto;
+    min-height: fit-content;
+    /* background-color: #ff676b; */
+}
+
+#contact form {
+    width: 75%;
+    min-height: fit-content;
+    /* background-color: yellow; */
+}
+
+.hadding {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 25px;
+    /* font-size: 1.3rem; */
+}
+
+.hadding .line {
+    width: 55px;
+    height: 3.5px;
+    background-color: black;
+}
+
+.sub-hadding {
+    padding: 25px 0px;
+    font-size: 3rem;
+}
+
+#contact form .input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+
+.input-container input,
+textarea {
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    outline: none;
+    background: none;
+    font-family: Gilroy-Bold;
+}
+
+textarea {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.input-container input:nth-child(1) {
+    width: 30%;
+}
+
+.input-container input:nth-child(2) {
+    flex: 1;
+}
+
+.send {
+    padding: 10px 100px;
+    background: none;
+    border: 2px solid black;
+    margin-top: 15px;
+    border-radius: 2px;
+    font-family: Gilroy-Bold;
+}
+
+/* contact section End */
+
+
+/* footer  */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Gilroy;
+    font-weight: bold;
+
+}
+
+footer #hart {
+    color: red;
+}
+
+/* 700px screen */
+@media (max-width:700px) {
+    .nav {
+        padding: 20px 40px;
+    }
+
+    .nav .menu .list {
+        display: none;
+    }
+
+    .menu .hidemenu {
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .page1-hero {
+        padding: 0;
+    }
+
+    .page1-hero .block {
+        padding: 0;
+        font-size: 2vw;
+    }
+
+    #page1 {
+        width: 100%;
+    }
+
+    #page1 .rtext {
+        width: 100%;
+    }
+
+    .about .text h2 {
+        font-size: 50px;
+    }
+
+    #design {
+        padding: 5px 20px;
+        border-radius: 8px;
+        font-size: 20px;
+    }
+
+    #code {
+        padding: 5px 10px 0px 0px;
+    }
+
+    .right-content {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .hero-buttom .limg {
+        width: 100%;
+    }
+
+    .hero-buttom .limg img {
+        width: 50vw;
+    }
+
+    .hero-buttom .rtext {
+        width: 100%;
+    }
+
+    .left-content {
+        width: 90%;
+    }
+
+    .box {
+        width: 250px;
+        height: 250px;
+    }
+
+    #contact {
+        width: 85%;
+    }
+
+    #contact .input-container {
+        flex-direction: column;
+    }
+
+    #contact .input-container input:nth-child(1) {
+        width: 100%;
+    }
+
+    #contact .input-container input:nth-child(2) {
+        width: 100%;
+    }
+}
