@@ -1,43 +1,3 @@
-function combo() {
-  gsap.registerPlugin(ScrollTrigger);
-
-
-  const locoScroll = new LocomotiveScroll({
-    el: document.querySelector(".main"),
-    smooth: true
-  });
-
-  locoScroll.on("scroll", ScrollTrigger.update);
-
-  ScrollTrigger.scrollerProxy(".main", {
-    scrollTop(value) {
-      return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-    },
-    getBoundingClientRect() {
-      return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
-    },
-    pinType: document.querySelector(".main").style.transform ? "transform" : "fixed"
-  });
-
-  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
-  ScrollTrigger.refresh();
-}
-
-// combo();
-
-// Resume Download link 
-const rBtn = document.querySelector("#dfile");
-rBtn.addEventListener('click', function () {
-  const pdfUrl = 'Assets/Sujitpatel_Resume.pdf';
-
-  const linkPdf = document.createElement('a');
-  linkPdf.href = pdfUrl;
-  linkPdf.download = "Sujitpatel_Resume.pdf";
-  linkPdf.click();
-
-});
-
 const rImg = document.querySelector(".resumeImg");
 rImg.addEventListener('click', function () {
   const pdfUrl = 'Assets/Sujitpatel_Resume.pdf';
@@ -47,6 +7,20 @@ rImg.addEventListener('click', function () {
   linkPdf.download = "Sujitpatel_Resume.pdf";
   linkPdf.click();
 });
+
+
+var rBtn = document.querySelector(".resume");
+rBtn.addEventListener('click', function (event) {
+  event.preventDefault();
+
+  var pdfUrl = 'Assets/Sujitpatel_Resume.pdf';
+
+  var link = document.createElement('a');
+  link.href = pdfUrl;
+  link.download = 'Sujitpatel_Resume.pdf';
+  link.click();
+});
+
 
 function gotogithub() {
   document.getElementById("github").click();
