@@ -29,22 +29,22 @@ function combo() {
 // Resume Download link 
 const rBtn = document.querySelector("#dfile");
 rBtn.addEventListener('click', function () {
-  const pdfUrl = 'Assets/Sujitpatel_resume.pdf';
+  const pdfUrl = 'Assets/Sujitpatel_Resume.pdf';
 
   const linkPdf = document.createElement('a');
   linkPdf.href = pdfUrl;
-  linkPdf.download = "sujitpatel.pdf";
+  linkPdf.download = "Sujitpatel_Resume.pdf";
   linkPdf.click();
 
 });
 
 const rImg = document.querySelector(".resumeImg");
 rImg.addEventListener('click', function () {
-  const pdfUrl = 'Assets/Sujitpatel_resume.pdf';
+  const pdfUrl = 'Assets/Sujitpatel_Resume.pdf';
 
   const linkPdf = document.createElement('a');
   linkPdf.href = pdfUrl;
-  linkPdf.download = "sujitpatel.pdf";
+  linkPdf.download = "Sujitpatel_Resume.pdf";
   linkPdf.click();
 });
 
