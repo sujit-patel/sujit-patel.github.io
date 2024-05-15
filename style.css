@@ -736,3 +736,23 @@ footer #hart {
         width: 100%;
     }
 }
+
+/* Lodader  */
+.loader-wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #E5EFF1;
+}
+
+.loader-wrapper img {
+    width: 500px;
+    height: 500px;
+}
+
+.content {
+    display: none;
+}

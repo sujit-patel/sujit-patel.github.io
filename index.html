@@ -37,150 +37,157 @@
         </nav>
     </aside>
 
-    <nav class="nav">
-        <div class="logo">
-            <h1>Sujit <span>Patel</span> </h1>
-        </div>
-        <div class="menu">
-            <div class="list">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#skill">Skill</a></li>
-                    <li class="resume"><a href="" class="resumeBtn"><img id="dfile"
-                        src="Assets/output-onlinegiftools (2).gif" alt="">Resume</a></li>
-                    <li class="github"><a id="github" href="https://github.com/sujit-patel"><img
-                                src="Assets/github_img.svg" alt="">See Github</a></li>
-                </ul>
-            </div>
-            <div class="hidemenu">
-                <img src="Assets/menu.svg" alt="">
-                Menu
-            </div>
+    <!-- Loader  -->
+    <div class="loader-wrapper">
+        <img src="Assets/R.gif" alt="Loader">
+    </div>
 
-        </div>
-    </nav>
+    <div class="content">
+        <nav class="nav">
+            <div class="logo">
+                <h1>Sujit <span>Patel</span> </h1>
+            </div>
+            <div class="menu">
+                <div class="list">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#skill">Skill</a></li>
+                        <li class="resume"><a href="" class="resumeBtn"><img id="dfile"
+                                    src="Assets/output-onlinegiftools (2).gif" alt="">Resume</a></li>
+                        <li class="github"><a id="github" href="https://github.com/sujit-patel"><img
+                                    src="Assets/github_img.svg" alt="">See Github</a></li>
+                    </ul>
+                </div>
+                <div class="hidemenu">
+                    <img src="Assets/menu.svg" alt="">
+                    Menu
+                </div>
+
+            </div>
+        </nav>
 
 
-    <!-- start page1  -->
-    <div id="page1">
-        <div class="page1-hero">
-            <div class="block">
-                <div id="design">Design</div>
-                <div id="code">Code</div>
+        <!-- start page1  -->
+        <div id="page1">
+            <div class="page1-hero">
+                <div class="block">
+                    <div id="design">Design</div>
+                    <div id="code">Code</div>
+                </div>
             </div>
-        </div>
-        <div class="hero-buttom">
-            <div class="limg">
-                <img src="Assets/output-onlinegiftools.gif" alt="">
-            </div>
-            <div class="rtext">
-                <div class="about">
-                    <div class="text">
-                        <h2>It is <span>Better</span> to <span>Complete</span> than <span>Perfect.</span></h2>
-                        <p>"I'm a Designer/Developer from Valsad, India. I love to create great website user experiences
-                            & website designs for brands, other than that</p>
+            <div class="hero-buttom">
+                <div class="limg">
+                    <img src="Assets/output-onlinegiftools.gif" alt="">
+                </div>
+                <div class="rtext">
+                    <div class="about">
+                        <div class="text">
+                            <h2>It is <span>Better</span> to <span>Complete</span> than <span>Perfect.</span></h2>
+                            <p>"I'm a Designer/Developer from Valsad, India. I love to create great website user
+                                experiences
+                                & website designs for brands, other than that</p>
+                        </div>
+                    </div>
+                    <div class="introBtn">
+                        <button>Say Hello👋</button>
+                        <button class="resumeImg" function="dResume">Get Resume <img src="Assets/download.svg"
+                                alt=""></button>
                     </div>
                 </div>
-                <div class="introBtn">
-                    <button>Say Hello👋</button>
-                    <button class="resumeImg" function="dResume">Get Resume <img src="Assets/download.svg"
-                            alt=""></button>
+            </div>
+
+        </div>
+        <!-- end page1  -->
+
+        <!-- Hero img section Start -->
+        <section class="hero-part">
+            <img src="Assets/portfolio web img.png" alt="">
+        </section>
+        <!-- Hero img section End -->
+
+        <!-- work sample start -->
+        <section id="worksamples">
+            <div class="hadding">
+                <div class="line"></div>
+                <h2>What I do</h2>
+            </div>
+            <h2 class="sub-hadding">Work Samples</h2>
+            <div class="work-container">
+                <div class="left-content">
+                    <div class="box" id="video">
+                        <video id="hoverVideo" muted loop src="Assets/Work Sampale.mp4"></video>
+                    </div>
+                    <div class="box" style="background: black;">
+                        <!-- <video id="hoverVideo" muted  loop src="Assets/financial_websites.mp4"></video> -->
+                        <img src="Assets/financial websites.png" alt="">
+                    </div>
+                    <div class="box">
+                        <img src="Assets/Lappy.png" alt="">
+                    </div>
+                    <div class="box" style="background: #FFC860;">
+                        <img src="Assets/Desktop - 1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="right-content">
+                    <button id="mywork" onclick="gotogithub()"><img src="Assets/seemywork.png" alt=""></button>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- work sample end -->
 
+        <!-- skill Section start  -->
+        <section id="skill">
+            <div class="hadding">
+                <div class="line"></div>
+                <h2> What I Am Good At</h2>
+            </div>
+            <h2 class="sub-hadding">Skills and intrests</h2>
+
+            <h3 class="sub-2">Designing</h3>
+            <div class="designing-container">
+                <img src="skill/canva.png" alt="">
+                <img src="skill/figma.png" alt="">
+            </div>
+            <h3 class="sub-2">Development</h3>
+            <div class="designing-container">
+                <img src="skill/html css js.png" alt="">
+                <img src="Assets/github_img.svg" alt="">
+                <img src="skill/node js.png" alt="">
+                <img src="skill/mongodb.png" alt="">
+                <img src="skill/mysql.png" alt="">
+                <img src="skill/Excel.png" alt="">
+            </div>
+        </section>
+        <!-- skill Section end  -->
+
+        <!-- contact section Start -->
+        <section id="contact">
+            <div class="hadding">
+                <div class="line"></div>
+                <h2> Contact Me</h2>
+            </div>
+            <h2 class="sub-hadding">Let's Connect</h2>
+            <form action="submit.php" method="post">
+                <div class="input-container">
+                    <input type="text" required name="name" placeholder="Name">
+                    <input type="email" required name="email" placeholder="Email">
+                </div>
+                <textarea name="Message" required placeholder="Message" id="" rows="10" cols="30"></textarea>
+                <button class="send" type="submit">Send</button>
+            </form>
+
+        </section>
+        <!-- contact section End -->
+
+        <!-- footer Start -->
+        <footer>
+            <p>created with ❤️ by me</p>
+        </footer>
+        <!-- footer End -->
     </div>
-    <!-- end page1  -->
-
-    <!-- Hero img section Start -->
-    <section class="hero-part">
-        <img src="Assets/portfolio web img.png" alt="">
-    </section>
-    <!-- Hero img section End -->
-
-    <!-- work sample start -->
-    <section id="worksamples">
-        <div class="hadding">
-            <div class="line"></div>
-            <h2>What I do</h2>
-        </div>
-        <h2 class="sub-hadding">Work Samples</h2>
-        <div class="work-container">
-            <div class="left-content">
-                <div class="box" id="video">
-                    <video id="hoverVideo" muted loop src="Assets/Work Sampale.mp4"></video>
-                </div>
-                <div class="box" style="background: black;">
-                    <!-- <video id="hoverVideo" muted  loop src="Assets/financial_websites.mp4"></video> -->
-                    <img src="Assets/financial websites.png" alt="">
-                </div>
-                <div class="box">
-                    <img src="Assets/Lappy.png" alt="">
-                </div>
-                <div class="box" style="background: #FFC860;">
-                    <img src="Assets/Desktop - 1.png" alt="">
-                </div>
-            </div>
-
-            <div class="right-content">
-                <button id="mywork" onclick="gotogithub()"><img src="Assets/seemywork.png" alt=""></button>
-            </div>
-        </div>
-    </section>
-    <!-- work sample end -->
-
-    <!-- skill Section start  -->
-    <section id="skill">
-        <div class="hadding">
-            <div class="line"></div>
-            <h2> What I Am Good At</h2>
-        </div>
-        <h2 class="sub-hadding">Skills and intrests</h2>
-
-        <h3 class="sub-2">Designing</h3>
-        <div class="designing-container">
-            <img src="skill/canva.png" alt="">
-            <img src="skill/figma.png" alt="">
-        </div>
-        <h3 class="sub-2">Development</h3>
-        <div class="designing-container">
-            <img src="skill/html css js.png" alt="">
-            <img src="Assets/github_img.svg" alt="">
-            <img src="skill/node js.png" alt="">
-            <img src="skill/mongodb.png" alt="">
-            <img src="skill/mysql.png" alt="">
-            <img src="skill/Excel.png" alt="">
-        </div>
-    </section>
-    <!-- skill Section end  -->
-
-    <!-- contact section Start -->
-    <section id="contact">
-        <div class="hadding">
-            <div class="line"></div>
-            <h2> Contact Me</h2>
-        </div>
-        <h2 class="sub-hadding">Let's Connect</h2>
-        <form action="submit.php" method="post">
-            <div class="input-container">
-                <input type="text" required name="name" placeholder="Name">
-                <input type="email" required name="email" placeholder="Email">
-            </div>
-            <textarea name="Message" required placeholder="Message" id="" rows="10" cols="30"></textarea>
-            <button class="send" type="submit">Send</button>
-        </form>
-
-    </section>
-    <!-- contact section End -->
-
-    <!-- footer Start -->
-    <footer>
-        <p>created with ❤️ by me</p>
-    </footer>
-    <!-- footer End -->
-
     <!-- javascript file -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="

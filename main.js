@@ -62,3 +62,11 @@ video.addEventListener('mouseover', function () {
 video.addEventListener('mouseout', function () {
   this.pause();
 });
+
+// loader 
+window.onload = function () {
+  setTimeout(function () {
+    document.querySelector('.loader-wrapper').style.display = 'none';
+    document.querySelector('.content').style.display = 'block';
+  }, 2000);
+};
