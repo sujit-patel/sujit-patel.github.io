@@ -172,10 +172,10 @@
             <h2 class="sub-hadding">Let's Connect</h2>
             <form onsubmit="sendEmail(event)">
                 <div class="input-container">
-                    <input type="text" required name="name" placeholder="Name">
-                    <input type="email" required name="email" placeholder="Email">
+                    <input type="text" id="name" required name="name" placeholder="Name">
+                    <input type="email" id="email" required name="email" placeholder="Email">
                 </div>
-                <textarea name="Message" required placeholder="Message" id="" rows="10" cols="30"></textarea>
+                <textarea name="Message" id="message" required placeholder="Message" id="" rows="10" cols="30"></textarea>
                 <button class="send" type="submit">Send</button>
             </form>
 
@@ -189,13 +189,13 @@
         <!-- footer End -->
     </div>
     <!-- javascript file -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="main.js"></script>
 </body>
 
