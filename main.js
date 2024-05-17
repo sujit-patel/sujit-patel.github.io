@@ -73,31 +73,29 @@ window.onload = function () {
 
 
 // Data Send On mail 
-emailjs.init("xsOKdel-g7ZiRWFoR");
+(function () {
+  emailjs.init("xsOKdel-g7ZiRWFoR");
+})();
 
-// Function to handle form submission
 function sendEmail(event) {
-  event.preventDefault(); 
+  event.preventDefault();
 
-  const form = event.target; 
-  const formData = new FormData(form); 
+  const form = event.target;
+  const formData = new FormData(form);
 
-  // Create data object with form values
   const data = {
     name: formData.get('name'),
     email: formData.get('email'),
     message: formData.get('Message')
   };
 
-  // Send email using EmailJS
   emailjs.send("service_dwjgkn1", "template_k6nkzvm", data)
-    .then(response => {
-      console.log('SUCCESS!', response.status, response.text); 
-      alert('Email sent successfully!'); 
-      form.reset(); 
-    })
-    .catch(error => {
-      console.log('FAILED...', error); 
-      alert('Failed to send email. Please try again later.'); 
+    .then(function (response) {
+      console.log('SUCCESS!', response.status, response.text);
+      alert('Email sent successfully!');
+      form.reset();
+    }, function (error) {
+      console.log('FAILED...', error);
+      alert('Failed to send email. Please try again later.');
     });
 }
