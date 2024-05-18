@@ -8,14 +8,15 @@ rImg.addEventListener('click', function () {
   linkPdf.click();
 });
 
-document.getElementById('resumeLink').addEventListener('click', function(e) {
-  e.preventDefault(); // Prevent the default link behavior
-  const link = document.createElement('a');
-  link.href = 'Assets/Sujitpatel_Resume.pdf'; // Path to your PDF file
-  link.download = 'Sujitpatel_Resume.pdf'; // The name of the downloaded file
-  link.click();
-});
+var rBtn = document.querySelector("#resumeLink");
+rBtn.addEventListener('click', function () {
+  const fileUrl = 'Assets/Sujitpatel_Resume.pdf';
 
+  const linkPdf = document.createElement('a');
+  linkPdf.href = fileUrl;
+  linkPdf.download = "Sujitpatel_Resume.pdf";
+  linkPdf.click();
+});
 
 function gotogithub() {
   document.getElementById("github").click();
