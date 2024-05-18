@@ -8,16 +8,11 @@ rImg.addEventListener('click', function () {
   linkPdf.click();
 });
 
-
-var rBtn = document.querySelector(".resume");
-rBtn.addEventListener('click', function (event) {
-  event.preventDefault();
-
-  var pdfUrl = 'Assets/Sujitpatel_Resume.pdf';
-
-  var link = document.createElement('a');
-  link.href = pdfUrl;
-  link.download = 'Sujitpatel_Resume.pdf';
+document.getElementById('resumeLink').addEventListener('click', function(e) {
+  e.preventDefault(); // Prevent the default link behavior
+  const link = document.createElement('a');
+  link.href = 'Assets/Sujitpatel_Resume.pdf'; // Path to your PDF file
+  link.download = 'Sujitpatel_Resume.pdf'; // The name of the downloaded file
   link.click();
 });
 
