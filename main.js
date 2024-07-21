@@ -51,14 +51,16 @@ function sidebarHandler() {
 sidebarHandler();
 
 
-const video = document.getElementById('hoverVideo');
-video.addEventListener('mouseover', function () {
-  this.play();
-});
-video.addEventListener('mouseout', function () {
-  this.pause();
-});
-
+// const video = document.querySelectorAll('#hoverVideo');
+// video.forEach((elem)=>{
+//   elem.addEventListener('mouseover', function () {
+//     this.play();
+//   });
+//   elem.addEventListener('mouseout', function () {
+//     this.pause();
+//   });
+// });
+  
 // loader 
 window.onload = function () {
   setTimeout(function () {
